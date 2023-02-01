@@ -72,8 +72,7 @@ console.log(typeof c);
 
 let name1 = prompt("What`s your first name?");
 let name2 = prompt("What`s your middle name?");
-let name3 = prompt("What`s your last name?");
+let age = prompt("How old are you?");
 
-console.log(name1);
-console.log(name2);
-console.log(name3);
+console.log("My name is" + " " + name1 + " " + name2 + ". I`m" + " " + age + " years old)" );
+
