@@ -43,18 +43,18 @@ let book12 = {
     pageCount:  400,
     genre: "Fantasy romance",
     authors:  [
-        {name:  "Stephenie Meyer"},
-        {age:  49}
+        {name:  "Stephenie Meyer",
+        age:  49}
     ],
-
 };
 
 let book22 = {
     title: "Anatomy",
     pageCount:  300,
     genre: "science",
-    authors:  [ {name:  "James Clea"},
-     {age:  37}
+    authors:  [
+        {name:  "James Clea",
+     age:  37}
     ],
 };
 
@@ -62,8 +62,9 @@ let book32 = {
     title: "Little book of psychology",
     pageCount:  350,
     genre: "psychology",
-    authors:  [ {name:  "Emily Rolls"},
-     {age:  51}
+    authors:  [
+        {name:  "Emily Rolls",
+     age:  51}
     ],
 };
 
