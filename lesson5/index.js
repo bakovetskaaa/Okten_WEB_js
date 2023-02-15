@@ -1,18 +1,18 @@
 console.log("Hello!");
 // - створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б
-// rectangle = (a, b)  => {
+//  let rectangle = (a, b)  => {
 //      return a * b;
 //  }
 // console.log(rectangle(2, 4));
 //--------------------------------------------------------------------------------------------------------------------//
 // - створити функцію яка обчислює та повертає площу кола з радіусом r
-//  circle = (r) =>{
+//  let circle = (r) =>{
 //         return 3.14 * r * r;
 // }
 // console.log(circle(4));
 //--------------------------------------------------------------------------------------------------------------------//
 // - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіуc r
-//  topper = (h, r) => {
+//  let topper = (h, r) => {
 //     return (2 * 3.14 * r * (r + h))
 // }
 // console.log(topper(1, 2));
@@ -27,14 +27,14 @@ console.log("Hello!");
 // console.log(arrayEnter(array));
 //--------------------------------------------------------------------------------------------------------------------//
 // - створити функцію яка створює параграф з текстом. Текст задати через аргумент
-//  paragraph  = (text) =>{
+//  let paragraph  = (text) =>{
 //     document.write(`${text}`);
 // }
 // paragraph("sun is shining!");
 // paragraph("Lorem ipsum dolor sit amet.");
 //--------------------------------------------------------------------------------------------------------------------//
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
-//  threeUlLi = (text) => {
+//  let threeUlLi = (text) => {
 //     document.write(`<ul>`);
 //     document.write(`<li>${text}</li>`);
 //     document.write(`<li>${text}</li>`);
@@ -45,7 +45,7 @@ console.log("Hello!");
 //--------------------------------------------------------------------------------------------------------------------//
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий.
 // Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
-//  threeUlLi = (text, n) => {
+//  let threeUlLi = (text, n) => {
 //     document.write(`<ul>`);
 //     for (let i = 0; i < n; i++) {
 //         document.write(`<li>${text}</li>`);
@@ -56,7 +56,7 @@ console.log("Hello!");
 //--------------------------------------------------------------------------------------------------------------------//
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
 // let array = [10, 20, 30, true, "olia"];
-// primitive = () => {
+// let primitive = () => {
 //     document.write(`<ul>`);
 //     for(let i = 0; i < array.length; i++){
 //         document.write(`<li>${array[i]}</li>`);
@@ -68,7 +68,7 @@ console.log("Hello!");
 // - створити функцію яка приймає масив об'єктів з наступними полями id,
 // name,age , та виводить їх в документ.
 // Для кожного об'єкту окремий блок.
-//  arrays = (array) => {
+//  let arrays = (array) => {
 //     for (let i = 0; i < array.length; i++) {
 //         document.write(`<div>id: ${array[i].id}; name: ${array[i].name}; age: ${array[i].age};</div>`);
 //     }
@@ -81,7 +81,7 @@ console.log("Hello!");
 //--------------------------------------------------------------------------------------------------------------------//
 // - створити функцію яка повертає найменше число з масиву
 // let mine = [1, 2, 4, -5, 0];
-//  mins = (array) => {
+//  let mins = (array) => {
 //     //console.log(Math.min(...mine));
 //     let min = array[0];
 //     for(let i = 0; i < array.length; i++){
@@ -95,7 +95,7 @@ console.log("Hello!");
 //--------------------------------------------------------------------------------------------------------------------//
 // - створити функцію sum(arr)яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад sum([1,2,10]) //->13
 // let it = [1, 2, 10];
-//  sum = (array) => {
+//  let sum = (array) => {
 //      let basket = 0;
 //     for (let i = 0; i < array.length; i++){
 //         basket = basket + array[i];
@@ -108,7 +108,7 @@ console.log("Hello!");
 // - створити функцію swap(arr,index1,index2). Функція міняє місцями заначення у відповідних індексах
 // Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44]
 // let array = [11, 22, 33, 44];
-//  swap = (arr, index1, index2) => {
+//  let swap = (arr, index1, index2) => {
 //     let temp = arr[index1];
 //     arr[index1] = arr[index2];
 //     arr[index2] = temp;
@@ -119,7 +119,21 @@ console.log("Hello!");
 // - Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
 // Приклад exchange(10000,[{currency:'USD',value:40},{currency:'EUR',value:42}],'USD') // => 250
 // function exchange(sumUAH,currencyValues,exchangeCurrency) {
-//      let rate = currencyValues.find(foo => foo.currency === exchangeCurrency);
-//      return sumUAH / rate.value;
+//      // let rate = currencyValues.find(foo => foo.currency === exchangeCurrency);
+//     // return sumUAH / rate.value;
+//     for (let i = 0; i <currencyValues.length ; i++) {
+//         if (exchangeCurrency === currencyValues[i].currency) {
+//             return sumUAH / currencyValues[i].value;
+//         }
+//     }
 // }
 // console.log(exchange(10000, [{currency: 'USD', value: 40}, {currency: 'EUR', value: 42}], 'EUR'));
+
+let  exchange = (sumUAH,currencyValues,exchangeCurrency) => {
+    for (let i = 0; i <currencyValues.length ; i++) {
+        if (exchangeCurrency === currencyValues[i].currency) {
+            return sumUAH / currencyValues[i].value;
+        }
+    }
+}
+console.log(exchange(10000, [{currency: 'USD', value: 40}, {currency: 'EUR', value: 42}], 'EUR'));
