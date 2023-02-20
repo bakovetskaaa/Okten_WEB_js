@@ -75,7 +75,7 @@
 //     {title: 'Python Complex', monthDuration: 6},
 //     {title: 'QA Complex', monthDuration: 4},
 //     {title: 'FullStack', monthDuration: 7},
-//     {title: 'Frontend', monthDuration: 4}
+//     {title: 'Frontend', monthDuration: 4},
 // ];
 //--------------------------------------------------------------------------------------------------------------------//
 // // -- відсортувати його за спаданням за monthDuration
@@ -93,13 +93,18 @@
 //--------------------------------------------------------------------------------------------------------------------//
 // -- відфільтрувати , залишивши тільки курси з тривалістю більше 5 місяців
 // function moreThenFive(){
-//     for (let i = 0; i < coursesAndDurationArray.length; i++) {
-//         if (coursesAndDurationArray[i].monthDuration > 5){
-//             console.log(coursesAndDurationArray[i]);
-//         }
+// //     for (let i = 0; i < coursesAndDurationArray.length; i++) {
+// //         if (coursesAndDurationArray[i].monthDuration > 5){
+// //             console.log(coursesAndDurationArray[i]);
+// //         }
+// //     }
+// // }
+// // moreThenFive();
+// coursesAndDurationArray.filter( (course) =>{
+//     if(course.monthDuration > 5) {
+//         delete course;
+//         console.log(course);
 //     }
-// }
-// moreThenFive();
 //--------------------------------------------------------------------------------------------------------------------//
 // -- за допомоги map перетворити кожен елемент на наступний тип {id,title,monthDuration}
 //  const map1 = coursesAndDurationArray.map (function (value, index){
