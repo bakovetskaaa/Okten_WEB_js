@@ -12,17 +12,17 @@ console.log("Hello!");
 // }
 // let array = [];
 //
-// array.push(user1 = new User(1 , "Olia", "Esen", "123@gmail", "87652"));
-// array.push(user2 = new User(2 , "Olha", "Ophach", "arg@gmail", "12344"));
-// array.push(user3 = new User(3 , "Valia", "Plon", "ehtn@gmail", "66532"));
-// array.push(user4 = new User(4 , "Semen", "Lymmyk", "bnbn@gmail", "98544"));
-// array.push(user5 = new User( 10, "Stepan", "Polotno", "tyuiolkjh@gmail", "12584"));
-// array.push(user6 = new User(6 , "Dmytro", "Lonko", "cvb@gmail", "37459"));
-// array.push(user7 = new User(7 , "Oleh", "Green", "78ikjhg@gmail", "15043"));
-// array.push(user8 = new User(8 , "Ilon", "Freenovych", "qaszxdrtgh@gmail", "55565"));
-// array.push(user9 = new User(9 , "Daryna", "Sas", "mnbv@gmail", "77743"));
-// array.push(user10 = new User(5, "Mykola", "Clon", "lkjhgf@gmail", "22268"));
-
+// array.push(user1 = new User(1 , "Olia", "Esen", "123@gmail", "87652"),
+// user2 = new User(2 , "Olha", "Ophach", "arg@gmail", "12344"),
+// user3 = new User(3 , "Valia", "Plon", "ehtn@gmail", "66532"),
+// user4 = new User(4 , "Semen", "Lymmyk", "bnbn@gmail", "98544"),
+// user5 = new User( 10, "Stepan", "Polotno", "tyuiolkjh@gmail", "12584"),
+// user6 = new User(6 , "Dmytro", "Lonko", "cvb@gmail", "37459"),
+// user7 = new User(7 , "Oleh", "Green", "78ikjhg@gmail", "15043"),
+// user8 = new User(8 , "Ilon", "Freenovych", "qaszxdrtgh@gmail", "55565"),
+// user9 = new User(9 , "Daryna", "Sas", "mnbv@gmail", "77743"),
+// user10 = new User(5, "Mykola", "Clon", "lkjhgf@gmail", "22268"));
+//
 // for (let i = 0; i < array.length; i++) {
 //     console.log(array[i]);
 // }
@@ -55,16 +55,17 @@ console.log("Hello!");
 //
 // let array = [];
 //
-// array.push(client1 = new Client(1, "Polina", "Andeeva", "eee@gmail.com", "23456", ["apple", "ace-cream"]));
-// array.push(client2 = new Client(2 , "Olha", "Ophach", "arg@gmail", "12344", ["lemon", "peach"]));
-// array.push(client3 = new Client(3 , "Valia", "Plon", "ehtn@gmail", "66532", ["fren"]));
-// array.push(client4 = new Client(4 , "Semen", "Lymmyk", "bnbn@gmail", "98544", ["rice", "tree", "poorer"]));
-// array.push(client5 = new Client( 10, "Stepan", "Polotno", "tyuiolkjh@gmail", "12584", ["lleee", "looo"]));
-// array.push(client6 = new Client(6 , "Dmytro", "Lonko", "cvb@gmail", "37459", ["url"]));
-// array.push(client7 = new Client(7 , "Oleh", "Green", "78ikjhg@gmail", "15043", ["juice", "apple"]));
-// array.push(client8 = new Client(8 , "Ilon", "Freenovych", "qaszxdrtgh@gmail", "55565", ["kiwi"]));
-// array.push(client9 = new Client(9 , "Daryna", "Sas", "mnbv@gmail", "77743", ["egg", "milk"]));
-// array.push(client10 = new Client(5, "Mykola", "Clon", "lkjhgf@gmail", "22268", ["pork"]));
+// array.push(client1 = new Client(1, "Polina", "Andeeva", "eee@gmail.com", "23456", ["apple", "ace-cream"]),
+// client2 = new Client(2 , "Olha", "Ophach", "arg@gmail", "12344", ["lemon", "peach"]),
+// client3 = new Client(3 , "Valia", "Plon", "ehtn@gmail", "66532", ["fren"]),
+// client4 = new Client(4 , "Semen", "Lymmyk", "bnbn@gmail", "98544", ["rice", "tree", "poorer"]),
+// client5 = new Client( 10, "Stepan", "Polotno", "tyuiolkjh@gmail", "12584", ["lleee", "looo"]),
+// client6 = new Client(6 , "Dmytro", "Lonko", "cvb@gmail", "37459", ["url"]),
+// client7 = new Client(7 , "Oleh", "Green", "78ikjhg@gmail", "15043", ["juice", "apple"]),
+// client8 = new Client(8 , "Ilon", "Freenovych", "qaszxdrtgh@gmail", "55565", ["kiwi"]),
+// client9 = new Client(9 , "Daryna", "Sas", "mnbv@gmail", "77743", ["egg", "milk"]),
+// client10 = new Client(5, "Mykola", "Clon", "lkjhgf@gmail", "22268", ["pork"]));
+
 
 // - Взяти масив (Client [] з попереднього завдання).Відсортувати його по кількості товарів в полі order по зростанню. (sort)
 // array.sort(function (a, b) {
@@ -186,32 +187,32 @@ console.log("Hello!");
 //
 
 // -створити класс/функцію конструктор попелюшка з полями ім'я, вік, розмір ноги. Створити масив з 10 попелюшок.
-class Cinderella{
-    constructor(name, age, footSize) {
-        this.name = name;
-        this.age = age;
-        this.footSize = footSize;
-    }
-}
-
-let arrayOfCinderellas = [];
-for (let i = 0; i < 10; i++) {
-    arrayOfCinderellas.push(
-        new Cinderella("Cinderella" + (i+1),
-        (Math.floor(Math.random() * 10) + 18),
-        (Math.floor(Math.random() * 10) + 34)));
-}
+// class Cinderella{
+//     constructor(name, age, footSize) {
+//         this.name = name;
+//         this.age = age;
+//         this.footSize = footSize;
+//     }
+// }
+//
+// let arrayOfCinderellas = [];
+// for (let i = 0; i < 10; i++) {
+//     arrayOfCinderellas.push(
+//         new Cinderella("Cinderella" + (i+1),
+//         (Math.floor(Math.random() * 10) + 18),
+//         (Math.floor(Math.random() * 10) + 34)));
+// }
 // console.log(array);
 // Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
-class Prince{
-    constructor(name, age, slipper) {
-        this.name = name;
-        this.age = age;
-        this.slipper = slipper;
-    }
-}
-let prince = new Prince("Romeo", 23, 36);
-console.log(prince);
+// class Prince{
+//     constructor(name, age, slipper) {
+//         this.name = name;
+//         this.age = age;
+//         this.slipper = slipper;
+//     }
+// }
+// let prince = new Prince("Romeo", 23, 36);
+// console.log(prince);
 //     За допомоги циклу знайти яка попелюшка повинна бути з принцом.
 // for (let i = 0; i < arrayOfCinderellas.length; i++) {
 //     if(arrayOfCinderellas[i].footSize === prince.slipper){
@@ -223,9 +224,10 @@ console.log(prince);
 // }
 //     Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
 
-let winner = arrayOfCinderellas.find((cinderella) => cinderella.footSize === prince.slipper);
-if(winner) {
-    console.log(`${prince.name} finds his Cinderella by ${winner.name}`);
-} else {
-    console.log("Find more");
-}
+// let winner = arrayOfCinderellas.find((cinderella) => cinderella.footSize === prince.slipper);
+// if(winner) {
+//     console.log(`${prince.name} finds his Cinderella by ${winner.name}`);
+// } else {
+//     console.log("Find more");
+// }
+
