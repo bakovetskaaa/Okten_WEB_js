@@ -3,29 +3,29 @@ console.log("Hello!");
 // - Створити функцію конструктор для об'єктів User з полями id, name, surname , email, phone
 // створити пустий масив, наповнити його 10 об'єктами new User(....)
 //
-// function User(id, name, surname, email, phone) {
-//     this.id = id;
-//     this.name = name;
-//     this.surname = surname;
-//     this.email = email;
-//     this.phone = phone;
-// }
-// let array = [];
-//
-// array.push(user1 = new User(1 , "Olia", "Esen", "123@gmail", "87652"),
-// user2 = new User(2 , "Olha", "Ophach", "arg@gmail", "12344"),
-// user3 = new User(3 , "Valia", "Plon", "ehtn@gmail", "66532"),
-// user4 = new User(4 , "Semen", "Lymmyk", "bnbn@gmail", "98544"),
-// user5 = new User( 10, "Stepan", "Polotno", "tyuiolkjh@gmail", "12584"),
-// user6 = new User(6 , "Dmytro", "Lonko", "cvb@gmail", "37459"),
-// user7 = new User(7 , "Oleh", "Green", "78ikjhg@gmail", "15043"),
-// user8 = new User(8 , "Ilon", "Freenovych", "qaszxdrtgh@gmail", "55565"),
-// user9 = new User(9 , "Daryna", "Sas", "mnbv@gmail", "77743"),
-// user10 = new User(5, "Mykola", "Clon", "lkjhgf@gmail", "22268"));
-//
-// for (let i = 0; i < array.length; i++) {
-//     console.log(array[i]);
-// }
+function User(id, name, surname, email, phone) {
+    this.id = id;
+    this.name = name;
+    this.surname = surname;
+    this.email = email;
+    this.phone = phone;
+}
+let array = [];
+
+array.push(user1 = new User(1 , "Olia", "Esen", "123@gmail", "87652"),
+user2 = new User(2 , "Olha", "Ophach", "arg@gmail", "12344"),
+user3 = new User(3 , "Valia", "Plon", "ehtn@gmail", "66532"),
+user4 = new User(4 , "Semen", "Lymmyk", "bnbn@gmail", "98544"),
+user5 = new User( 10, "Stepan", "Polotno", "tyuiolkjh@gmail", "12584"),
+user6 = new User(6 , "Dmytro", "Lonko", "cvb@gmail", "37459"),
+user7 = new User(7 , "Oleh", "Green", "78ikjhg@gmail", "15043"),
+user8 = new User(8 , "Ilon", "Freenovych", "qaszxdrtgh@gmail", "55565"),
+user9 = new User(9 , "Daryna", "Sas", "mnbv@gmail", "77743"),
+user10 = new User(5, "Mykola", "Clon", "lkjhgf@gmail", "22268"));
+
+for (let i = 0; i < array.length; i++) {
+    console.log(array[i]);
+}
 // - Взяти масив з  User[] з попереднього завдання, та відфільтрувати , залишивши тільки об'єкти з парними id (filter)
 // let ggg = array.filter(double  => double.id % 2 === 0);
 // console.log(ggg);
